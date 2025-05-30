@@ -21,7 +21,6 @@ const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
   );
 };
 
-export default Users;
 
 
 export async function getStaticProps() {
@@ -35,3 +34,6 @@ export async function getStaticProps() {
   }
 }
 
+
+
+export default Users;
