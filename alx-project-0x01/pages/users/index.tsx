@@ -2,7 +2,7 @@ import { UserProps } from "@/interfaces";
 import UserCard from "@/components/common/UserCard";
 import Header from "@/components/layout/Header";
 
-const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
+const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
@@ -12,7 +12,7 @@ const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
           <button className="bg-blue-700 px-4 py-2 rounded-full text-white">Add User</button>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {users.map((user: UserProps, key: number) => (
+          {posts.map((user: UserProps, key: number) => (
             <UserCard key={key} {...user} />
           ))}
         </div>
